@@ -1,5 +1,18 @@
 # YAML support for the Go language
 
+# FORK WARNING
+
+This is a fork of official [go-yaml/yaml/v2](https://github.com/go-yaml/yaml/tree/v2) just in order to add:
+```go
+encoder.SetFlowStyle(true)
+encoder.SetLineWidth(-1)
+```
+(all modifications are contained within `fork.go`)
+inspired by the pull-request [go-yaml/yaml#166](https://github.com/go-yaml/yaml/issues/166) submitted by 
+[@alexandrevicenzi](https://github.com/alexandrevicenzi) into upstream but rejected because of preparation for `v3`.
+
+Hopefully this fork will go away once [go-yaml/yaml/v3](https://github.com/go-yaml/yaml/tree/v3) is out.
+
 Introduction
 ------------
 
